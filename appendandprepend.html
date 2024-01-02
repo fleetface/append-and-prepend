@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div id="box" style="border: 2px solid black;">
+<h1>Hello</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea facere a hic fugit voluptates eos saepe consequuntur molestiae laboriosam temporibus.</p>
+</div>
+
+<input type="button" value="Append" id="app">
+<input type="button" value="Prepend" id="pre">
+
+<script>
+$(document).ready(function(){
+$('#app').click(
+    function () {
+        $('#box').append('<h1> Hello </h1>')
+    }
+)
+
+$('#pre').click(
+    function () {
+        $('#box').prepend('<h1> Hello </h1>')
+    }
+)
+})
+</script>
+    
+</body>
+</html>
